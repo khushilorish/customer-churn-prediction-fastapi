@@ -16,7 +16,7 @@ st.sidebar.title("Project Information")
 
 st.sidebar.success("Model : Random Forest")
 st.sidebar.info("Threshold : 0.60")
-st.sidebar.write("Accuracy : 76.7%")
+st.sidebar.write("Accuracy : 80.9%")
 st.sidebar.write("Recall : 72.6%")
 st.sidebar.write("Precision : 62.0%")
 
@@ -125,10 +125,6 @@ with st.form("prediction_form"):
             min_value=0.0
         )
 
-        TotalCharges = st.number_input(
-            "Total Charges",
-            min_value=0.0
-        )
 
     submitted = st.form_submit_button("🔍 Predict")
 
@@ -148,8 +144,7 @@ if submitted:
         "Contract": Contract,
         "PaperlessBilling": PaperlessBilling,
         "PaymentMethod": PaymentMethod,
-        "MonthlyCharges": MonthlyCharges,
-        "TotalCharges": TotalCharges
+        "MonthlyCharges": MonthlyCharges
     }
 
     response = requests.post(

@@ -14,4 +14,3 @@ class CustomerData(BaseModel):
     PaperlessBilling: str
     PaymentMethod: str
     MonthlyCharges: float
-    TotalCharges: float

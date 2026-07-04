@@ -37,6 +37,9 @@ class FeatureEngineering(BaseEstimator, TransformerMixin):
         for col in cols:
             x[col]= x[col].map(mapping)
 
+        # creating totalcharges feature
+        x["TotalCharges"] = x["MonthlyCharges"] * x["tenure"]
+
         # remove temporary columns
         # x.drop(columns=['StreamingTV', 'StreamingMovies','OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport'], inplace=True)
 
