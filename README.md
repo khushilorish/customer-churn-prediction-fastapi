@@ -78,7 +78,7 @@ Threshold used:
 
 | Metric | Score |
 |---------|--------|
-| Accuracy | 76.7% |
+| Accuracy | 80.9% |
 | Precision | 62.0% |
 | Recall | 72.6% |
 
