@@ -153,7 +153,7 @@ if submitted:
     }
 
     response = requests.post(
-        "http://127.0.0.1:8000/predict",
+        "https://khushilorish-customer-churn-prediction-fastapi.hf.space/predict",
         json=customer
     )
 
